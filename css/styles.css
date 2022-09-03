@@ -324,7 +324,7 @@ ul {
 
 .social-link:hover .social-icons,
 .social-link:focus .social-icons {
-  fill: var(--light-text-color);
+  fill: var(--logo-color-gray);
 }
 
 .social-icons {
@@ -352,16 +352,28 @@ ul {
 .cliets-item {
   width: 170px;
   height: 92px;
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--logo-color-gray);
   border-radius: 4px;
 }
-.clients-logo {
-  padding: 16px 32px;
-  fill: var(--logo-color-gray);
-}
-.cliets-item:hover .clients-logo,
-.cliets-item:focus .clients-logo {
+
+.clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo {
+  border-color: var(--accent-color);
   fill: var(--accent-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+.clients-logo {
+  fill: var(--logo-color-gray);
 }
 
 .cliets-item:hover,
@@ -395,7 +407,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.9;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 
   color: var(--light-text-color);
@@ -406,7 +418,7 @@ ul {
 }
 
 .footer-link:hover,
-.footer-link {
+.footer-link:focus {
   color: var(--accent-color);
 }
 .footer-address:hover,
@@ -498,8 +510,9 @@ ul {
 .filter-btn:focus {
   color: var(--light-text-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .project-name {
   font-weight: 700;
@@ -512,6 +525,7 @@ border-radius: 4px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 .project-list {
   display: flex;
@@ -521,11 +535,16 @@ border-radius: 4px;
 .project-item {
   flex-basis: calc((100% - 30px * 2) / 3);
 }
-.project-item:hover,
-.project-item:focus {
+
+.project-link {
+  display: block;
+}
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .project-img {
   display: block;
 }
