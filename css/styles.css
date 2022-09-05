@@ -324,11 +324,11 @@ ul {
 
 .social-link:hover .social-icons,
 .social-link:focus .social-icons {
-  fill: var(--logo-color-gray);
+  fill: var(--light-text-color);
 }
 
 .social-icons {
-  fill: var(--primary-text-color);
+  fill: var(--logo-color-gray);
 }
 
 /* Постійні клієнти */
